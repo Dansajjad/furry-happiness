@@ -30,6 +30,9 @@ It's not true JSON behind the scenes, but it's close enough
 // console.log(rainbowRoses.toJSON());
 // console.log(heirloomRoses.toJSON());
 
+//uncomment below to see the .on() log out a change message to the console
+rainbowRoses.set("price", 20); //change price
+
 
 
 // template
