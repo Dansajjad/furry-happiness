@@ -10,6 +10,7 @@ app.singleFlower = Backbone.Model.extend({ //namespacing because some other vari
   },
 
   //code below is not necessary but we will look at how to watch for instance changes
+  //it is a good idea to watch for and inform of the changes
   initialize: function() {//will run everytime a new instance is created
     console.log("A model instance named " + this.get("name") +
     " has been created and it costs " + this.get("price"));
