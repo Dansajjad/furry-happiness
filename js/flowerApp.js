@@ -25,17 +25,30 @@ var heirloomRoses = new app.singleFlower({
 at our model and sends data as if it were a JSON like object.
 It's not true JSON behind the scenes, but it's close enough
 */
-//to check how the instances look in the browser uncomment the lines below
+/*to check how the instances look in the browser uncomment the lines below*/
 // console.log(redRoses.toJSON());
 // console.log(rainbowRoses.toJSON());
 // console.log(heirloomRoses.toJSON());
 
 //uncomment below to see the .on() log out a change message to the console
-rainbowRoses.set("price", 20); //change price
+// rainbowRoses.set("price", 20); //change price
+
+
+//instantiate a collection
+var flowerGroup = new app.FlowersCollection([//adding flower model instances
+  redRoses, rainbowRoses, heirloomRoses
+]);
+/*uncomment lines below to see .add() & .remove() methods
+//flowerGroup.remove(heirloomRoses);
+// flowerGroup.add(heirloomRoses)
+console.log(flowerGroup.toJSON());
 
 
 
-// template
+
+
+
+/* template */
 // var redRoses = new app.singleFlower({
 //   name: "",
 //   price:,
