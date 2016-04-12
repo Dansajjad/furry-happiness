@@ -44,6 +44,4 @@ app.singleFlowerView = Backbone.View.extend({//single flower view
   The parameter being passed to it in this case is flower template, which is a reference
   to the variable directly above on line 18. Which again is a reference to the model data in
   JSON like format, we don't yet know which specific model.
-
-
 */
