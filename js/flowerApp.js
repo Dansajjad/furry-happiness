@@ -34,18 +34,20 @@ It's not true JSON behind the scenes, but it's close enough
 // rainbowRoses.set("price", 20); //change price
 
 
-//instantiate a collection
+//instantiate a collection (array of model instances)
 var flowerGroup = new app.FlowersCollection([//adding flower model instances
   redRoses, rainbowRoses, heirloomRoses
 ]);
-/*uncomment lines below to see .add() & .remove() methods
+/*uncomment lines below to see .add() & .remove() methods*/
 //flowerGroup.remove(heirloomRoses);
 // flowerGroup.add(heirloomRoses)
-console.log(flowerGroup.toJSON());
+//console.log(flowerGroup.toJSON());
 
 
+//create a new instance of my app.allFlowersView, which is a collection view
+var flowerGroupView = new app.allFlowersView({ collection: flowerGroup });
 
-
+$("#allFlowers").html(flowerGroupView.render().el);
 
 
 /* template */

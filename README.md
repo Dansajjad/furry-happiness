@@ -28,3 +28,6 @@ store collection instance data in a section tag (a wrapper for group of article 
 ####Section 2.1: Collection View
 * create view instance in allFlowersView.js
 * create the nameTag, render(), addFlower()
+####Section 3: Loading model data on a webpage
+* create a new instance of app.allFlowersView
+* load content into our html page
