@@ -2,6 +2,7 @@
 Experiments in Backbone.js
 
 ###Steps
+
 ####Section 1
 * set up folder structure
 * set up html skeleton with script tags in the right order
@@ -15,6 +16,7 @@ Experiments in Backbone.js
   ]
 * create collection class in allFlowers.js
 * instantiate collection in flowerApp.js
+
 ####Section 2: Views
 Key Points:
 Views: contain rules for displaying data into HTML
@@ -25,9 +27,11 @@ store collection instance data in a section tag (a wrapper for group of article 
 * create view instance in singleFlowerView.js; inside it add:
 * tagName, className, the template hook, and the render function
 * create a template in index.html
+
 ####Section 2.1: Collection View
 * create view instance in allFlowersView.js
 * create the nameTag, render(), addFlower()
+
 ####Section 3: Loading model data on a webpage
 * create a new instance of app.allFlowersView
 * load content into our html page
